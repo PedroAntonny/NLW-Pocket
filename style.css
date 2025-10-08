@@ -216,3 +216,58 @@ button {
 .logo {
   height: 24px;
 }
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--gray-700);
+  gap: 20px;
+}
+
+.search-input {
+  height: 44px;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid var(--gray-200);
+  outline: none;
+  color: var(--white);
+  font-size: 16px;
+  border-radius: 6px;
+  padding-left: 48px;
+}
+
+.search-input::placeholder {
+  color: var(--gray-200);
+}
+
+.search-icon {
+  position: absolute;
+  left: 16px;
+  top: 22px;
+  transform: translateY(-50%);
+}
+
+.btn-full {
+  width: 100%;
+  justify-content: center;
+}
+
+.sidebar {
+  transition: transform 0.3s ease;
+}
+
+.sidebar-closed .sidebar {
+  transform: translateX(-100%);
+}
+
+.sidebar-closed .open-toggle {
+  display: block;
+}
